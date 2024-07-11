@@ -1,2 +1,5 @@
 /.idea/
 /build/
+/.gradle/
+/.gradle/8.7/executionHistory/
+/.gradle/8.7/dependencies-accessors/

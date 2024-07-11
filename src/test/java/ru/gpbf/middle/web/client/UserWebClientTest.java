@@ -42,7 +42,7 @@ class UserWebClientTest extends AbstractMockWebServerTest {
             e.printStackTrace();
         }
 
-        assertThat(request.getBody().readUtf8()).isEqualTo("{\"userId\":1,\"userName\":\"alina\"}");
+        assertThat(request.getBody().readUtf8()).isEqualTo("{\"userTelegramId\":1,\"userName\":\"alina\"}");
         assertThat(request.getMethod()).isEqualTo("POST");
         assertThat(request.getPath()).isEqualTo("/v2/users");
     }
@@ -82,7 +82,7 @@ class UserWebClientTest extends AbstractMockWebServerTest {
             e.printStackTrace();
         }
 
-        assertThat(request.getBody().readUtf8()).isEqualTo("{\"userId\":null,\"userName\":null}");
+        assertThat(request.getBody().readUtf8()).isEqualTo("{\"userTelegramId\":null,\"userName\":null}");
         assertThat(request.getMethod()).isEqualTo("POST");
         assertThat(request.getPath()).isEqualTo("/v2/users");
     }

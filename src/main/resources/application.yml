@@ -1,5 +1,5 @@
 abs:
-  url: "http://localhost:6060"
+  url: "http://back:6060"
   register: "/v2/users"
   account: "/accounts"
 
